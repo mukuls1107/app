@@ -16,4 +16,8 @@ COPY . .
 
 
 # Expose the port
-EXPOSE 
+EXPOSE 5003
+
+
+# Define 
+CMD [ "node", "./src/server.js" ]
