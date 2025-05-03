@@ -1,0 +1,49 @@
+### PSOT the auth/register route
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "gilgamesh@gmail.com",
+    "password" : "456231"
+}
+### POST the auth/login route
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "username" : "gilgamesh@gmail.com",
+    "password" : "456231"
+}
+
+
+### Fethc all todos at /todo
+
+
+GET http://localhost:8000/todo/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2Mjg4NDIwLCJleHAiOjE3NDYzNzQ4MjB9.XxLvz5yWS13RWm50WTblEyWrKT6It9p1nb2tmKx9G-0
+
+### Add a todo
+POST http://localhost:8000/todo/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2Mjg4NDIwLCJleHAiOjE3NDYzNzQ4MjB9.XxLvz5yWS13RWm50WTblEyWrKT6It9p1nb2tmKx9G-0
+
+{
+    "task": "This is my third todo"
+}
+
+### Update a todo
+PUT http://localhost:8000/todo/2?page=4
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2Mjg4NDIwLCJleHAiOjE3NDYzNzQ4MjB9.XxLvz5yWS13RWm50WTblEyWrKT6It9p1nb2tmKx9G-0
+
+{
+    "completed" : 1
+}
+
+
+### Delete a todo
+
+DELETE http:localhost:8000/todo/6
+
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ2Mjg4NDIwLCJleHAiOjE3NDYzNzQ4MjB9.XxLvz5yWS13RWm50WTblEyWrKT6It9p1nb2tmKx9G-0
