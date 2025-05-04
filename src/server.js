@@ -7,7 +7,7 @@ import todoRoutes from "./routes/todoRoutes.js"
 import authMiddleware from "./middleware/authMiddleware.js";
 
 const app = express();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5003
 
 
 // Get the file path from the current root folder from public/index.html
